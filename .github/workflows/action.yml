@@ -1,0 +1,11 @@
+on: [push]
+jobs:
+  run-github-actions:
+  steps:
+    - name:simple JS Action
+      id: greet
+      uses: SOPHWORKS/hello-world-javascript-action@v1
+      with:
+        who-to-greet: Daer
+      - name: Log greeting time
+        run: echo "{{ steps.greet.outputs.tme}}"
