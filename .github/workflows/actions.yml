@@ -4,7 +4,7 @@ jobs:
   run-githubs-actions:
     runs-on: ubuntu-latest 
     steps:
-      - name: actions checkout
+      - name: checkout
         run: actions/checkout@v1
       - name: List File Location after checkout
         run: |
