@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - name: checkout
-        run: actions/checkout@v1
+        run: SOPHWORKS/checkout@v1
       - name: List File Location after checkout
         run: |
           pwd
