@@ -8,6 +8,6 @@ jobs:
         id: greet
         uses: SOPHWORK/hello-world-javascript-action@v1
         with:
-          who-to-greet: Joshua
+          who-to-greet: James
       - name: Log Greet Time
         run: echo "${{steps.greet.output.time}}"
