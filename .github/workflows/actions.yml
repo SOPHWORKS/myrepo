@@ -4,7 +4,7 @@ jobs:
   run-githubs-actions:
     runs-on: ubuntu-latest 
     steps:
-      - name: List File Location after checkout
+      - name: List File
         run: |
           pwd
           ls -a
