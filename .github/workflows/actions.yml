@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Simple JS Action
         id: greet
-        uses: SOPHWORK/hello-world-javascript-action@ad41a6c27317e688719c813b0d6a25685a9bce54
+        uses: SOPHWORKS/hello-world-javascript-action@ad41a6c27317e688719c813b0d6a25685a9bce54
         with:
           who-to-greet: James
       - name: Log Greet Time
