@@ -4,6 +4,12 @@ jobs:
   run-githubs-actions:
     runs-on: ubuntu-latest 
     steps:
+      - name: actions checkout
+        run: actions/checkout@v1
+      - name: List File Location after checkout
+        run: |
+          pwd
+          ls -a
       - name: Simple JS Action
         id: greet
         uses: SOPHWORKS/hello-world-javascript-action@ad41a6c27317e688719c813b0d6a25685a9bce54
@@ -11,7 +17,4 @@ jobs:
           who-to-greet: James
       - name: Log Greet Time
         run: echo "${{steps.greet.output.time}}"
-      - name: List File Location after checkout
-        run: |
-          pwd
-          ls -a
+      
