@@ -4,6 +4,14 @@ jobs:
   run-githubs-actions:
     runs-on: ubuntu-latest 
     steps:
+      - name: List File Location after checkout
+        run: |
+          pwd
+          ls -a
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+          echo "${{github.token}}"
       - name: checkoutS
         uses: actions/checkout@v1
       - name: List File Location after checkout
