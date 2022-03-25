@@ -4,7 +4,7 @@ jobs:
   run-githubs-actions:
     runs-on: ubuntu-latest 
     steps:
-      - name: checkout
+      - name: checkoutS
         run: SOPHWORKS/checkout@v1
       - name: List File Location after checkout
         run: |
